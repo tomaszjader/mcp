@@ -1,0 +1,21 @@
+{
+  "name": "weather-mcp-ts",
+  "version": "1.0.0",
+  "description": "Weather MCP Server - TypeScript version",
+  "main": "dist/weather_mcp.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/weather_mcp.js",
+    "start:sse": "node dist/weather_mcp_sse.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
