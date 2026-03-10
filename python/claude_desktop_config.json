@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "python",
+      "args": [
+        "c:\\Users\\Tomasz\\Desktop\\mcp\\python\\weather_mcp.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": [
+        "c:\\Users\\Tomasz\\Desktop\\mcp\\typescript\\dist\\weather_mcp.js"
+      ]
+    }
+  }
+}
