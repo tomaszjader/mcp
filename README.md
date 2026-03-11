@@ -1,4 +1,4 @@
-﻿# Weather MCP Server
+# Weather MCP Server
 
 Prosty serwer Model Context Protocol (MCP) dostarczający informacje o pogodzie za pomocą darmowego API [Open-Meteo](https://open-meteo.com/).
 
@@ -9,6 +9,30 @@ Ten projekt dostarcza ten sam serwer w dwóch różnych technologiach:
 Obie wersje posiadają identyczną funkcjonalność i występują w dwóch wariantach transportowych:
 1. **Zwykłej (stdio)** – idealna do integracji z klientami MCP uruchamianymi lokalnie (np. Claude Desktop, Cursor).
 2. **Webowej (SSE)** – pozwala na dostęp do serwera z poziomu przeglądarki oraz klientów wykonujących żądania HTTP.
+
+## Struktura projektu
+
+Aktualna struktura plików w repozytorium:
+
+```text
+mcp/
+├── README.md                  # Ten plik – główne informacje o projekcie
+├── python/                    # Implementacja w języku Python
+│   ├── README.md              # Instrukcja dla wersji Python
+│   ├── requirements.txt       # Zależności Pythona
+│   ├── weather_mcp.py         # Serwer stdio (dla Claude Desktop/Cursor)
+│   ├── weather_mcp_sse.py     # Serwer webowy (SSE) 
+│   └── claude_desktop_config.json # Przykładowa konfiguracja Claude Desktop
+└── typescript/                # Implementacja w TypeScript
+    ├── README.md              # Instrukcja dla wersji TypeScript
+    ├── package.json           # Zależności i skrypty npm
+    ├── tsconfig.json          # Konfiguracja kompilatora TypeScript
+    ├── claude_desktop_config.json # Przykładowa konfiguracja Claude Desktop
+    └── src/
+        ├── server.ts          # Główna logika serwera
+        ├── weather_mcp.ts     # Punkt wejścia dla serwera stdio
+        └── weather_mcp_sse.ts # Punkt wejścia dla serwera webowego SSE
+```
 
 ## Dostępne narzędzia (Tools)
 
